@@ -71,8 +71,8 @@ class Pyre(object):
 
     def random_colors(self):
         try: # needed for terminals that don't support 256 colors
-            self.colors = [random.randint(0,255) for i in range(4)]
-            for i in range(4): curses.init_pair(i+1, self.colors[i],-1)
+            self.colors = [random.randint(0,255) for i in range(self.kCOLOR_RANGE)]
+            for i in range(self.kCOLOR_RANGE): curses.init_pair(i+1, self.colors[i],-1)
         except: pass
 
     def change_intensity(self, amt):
