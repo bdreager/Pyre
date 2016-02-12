@@ -4,12 +4,21 @@ Terminal fire
 ###What
 A fire animation for the terminal, with support for 256 colors.
 
+###Install
+```
+python setup.py install
+```
+
 ###Requires
 `ncurses`
 
 ###Run
 ```
 python pyre.py
+```
+If installed:
+```
+pyre
 ```
 
 ###Controls

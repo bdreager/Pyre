@@ -1,6 +1,15 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+__program__ = 'Pyre'
+__version__ = '0.5.0'
+__description__ = 'Terminal fire'
+__author__ = 'Brandon Dreager'
+__author_email__ ='pyre@subol.es'
+__copyright__ = 'Copyright (c) 2016 Brandon Dreager'
+__license__ = 'MIT'
+__website__ = 'https://github.com/Regaerd/Pyre'
+
 import curses, random, os
 
 class Pyre(object):
