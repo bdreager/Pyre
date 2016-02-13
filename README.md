@@ -27,6 +27,8 @@ Keys  | Actions
 <kbd>q</kbd> or <kbd>Q</kbd> or <kbd>Esc</kbd> | quit
 <kbd>v</kbd> or <kbd>V</kbd> | toggle verbose output
 <kbd>c</kbd> or <kbd>C</kbd> | change colors (random)
+<kbd>t</kbd> or <kbd>T</kbd> | change colors over time
+<kbd>s</kbd> or <kbd>S</kbd> | smoothly change colors over time
 <kbd>i</kbd> or <kbd>I</kbd> | toggle auto-intensity
 <kbd>,</kbd> or <kbd><</kbd> | decrease intensity
 <kbd>.</kbd> or <kbd>></kbd> | increase intensity
