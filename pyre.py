@@ -93,9 +93,9 @@ class Driver(object):
 
     def __init__(self, stdscr):
         self.stdscr = stdscr
-        curses.halfdelay(1)
         curses.curs_set(0)
         curses.use_default_colors()
+        self.stdscr.nodelay(1)
 
         self.fire = Pyre(stdscr)
 
@@ -110,6 +110,7 @@ class Driver(object):
         while self.running:
             self.fire.update()
             self.update()
+            self.stdscr.timeout(50)
 
     def update(self):
         try:
