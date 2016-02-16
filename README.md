@@ -30,6 +30,7 @@ Keys  | Actions
 <kbd>t</kbd> or <kbd>T</kbd> | change colors over time
 <kbd>s</kbd> or <kbd>S</kbd> | smoothly change colors over time
 <kbd>i</kbd> or <kbd>I</kbd> | toggle auto-intensity
+<kbd>f</kbd> or <kbd>F</kbd> | toggle fluctuate intensity
 <kbd>,</kbd> or <kbd><</kbd> | decrease intensity
 <kbd>.</kbd> or <kbd>></kbd> | increase intensity
 
