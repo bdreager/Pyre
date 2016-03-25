@@ -1,18 +1,20 @@
 # Pyre
 Terminal fire
 
-###What
+![pyre](example.gif)
+
+### What
 A fire animation for the terminal, with support for 256 colors.
 
-###Install
+### Install
 ```
 python setup.py install
 ```
 
-###Requires
+### Requires
 `ncurses`
 
-###Run
+### Run
 ```
 python pyre.py
 ```
