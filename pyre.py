@@ -128,16 +128,24 @@ class Pyre(object):
 
 class Driver(object):
     kKEY_ESC = '\x1b'
+    kMIN_DELAY, kMAX_DELAY = (1, 100)
 
     def __init__(self, stdscr):
         self.stdscr = stdscr
         curses.curs_set(0)
         curses.use_default_colors()
         self.stdscr.nodelay(1)
+        self.delay_ms = 50
 
         self.fire = Pyre(stdscr)
 
-        self.running = False
+        self.running, self.paused = (False, False)
+
+    @property
+    def delay_ms(self): return self._delay_ms
+    @delay_ms.setter
+    def delay_ms(self, value):
+        self._delay_ms = max(min(value, self.kMAX_DELAY), self.kMIN_DELAY)
 
     def start(self):
         self.running = True
@@ -146,9 +154,9 @@ class Driver(object):
 
     def run(self):
         while self.running:
-            self.fire.update()
+            if not self.paused: self.fire.update()
             self.update()
-            self.stdscr.timeout(50)
+            self.stdscr.timeout(self.delay_ms)
 
     def update(self):
         try:
@@ -166,8 +174,11 @@ class Driver(object):
         elif lower=='f': self.fire.fluctuate_intensity = not self.fire.fluctuate_intensity
         elif lower=='t': self.fire.random_change = not self.fire.random_change
         elif lower=='s': self.fire.toggle_smooth_change()
+        elif lower=='p': self.paused = not self.paused
         elif key==',' or key=='<': self.fire.change_intensity(-1)
         elif key=='.' or key=='>': self.fire.change_intensity( 1)
+        elif key=='-' or key=='_': self.delay_ms -= 5
+        elif key=='=' or key=='+': self.delay_ms += 5
 
 def main(stdscr=None):
     if not stdscr: curses.wrapper(main)

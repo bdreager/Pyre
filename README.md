@@ -27,6 +27,7 @@ pyre
 Keys  | Actions
 ----- | -------
 <kbd>q</kbd> or <kbd>Q</kbd> or <kbd>Esc</kbd> | quit
+<kbd>p</kbd> or <kbd>P</kbd> | pause
 <kbd>v</kbd> or <kbd>V</kbd> | toggle verbose output
 <kbd>c</kbd> or <kbd>C</kbd> | change colors (random)
 <kbd>t</kbd> or <kbd>T</kbd> | change colors over time
@@ -35,6 +36,8 @@ Keys  | Actions
 <kbd>f</kbd> or <kbd>F</kbd> | toggle fluctuate intensity
 <kbd>,</kbd> or <kbd><</kbd> | decrease intensity
 <kbd>.</kbd> or <kbd>></kbd> | increase intensity
+<kbd>-</kbd> or <kbd>_</kbd> | decrease update delay
+<kbd>=</kbd> or <kbd>+</kbd> | increase update delay
 
 ###Support
 - [x] Works on Linux completely
