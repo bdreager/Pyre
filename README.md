@@ -23,7 +23,7 @@ If installed:
 pyre
 ```
 
-###Controls
+### Controls
 Keys  | Actions
 ----- | -------
 <kbd>q</kbd> or <kbd>Q</kbd> or <kbd>Esc</kbd> | quit
@@ -39,13 +39,13 @@ Keys  | Actions
 <kbd>-</kbd> or <kbd>_</kbd> | decrease update delay
 <kbd>=</kbd> or <kbd>+</kbd> | increase update delay
 
-###Support
+### Support
 - [x] Works on Linux completely
 
 - [x] Works on OSX completely
 
 - [ ] Windows not supported
 
-###Credit
+### Credit
 Inspired by:
 https://gist.github.com/cursed255/011c56ce40df0baf1d50
